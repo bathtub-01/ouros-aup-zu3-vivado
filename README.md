@@ -1,4 +1,4 @@
-# Ouros on AUP-ZU3
+# Ouros UART Demo on AUP-ZU3
 
 Vivado sources for the standalone Ouros Haskell processor FPGA/UART demo on
 the [Real Digital AUP-ZU3](https://www.realdigital.org/hardware/aup-zu3). 

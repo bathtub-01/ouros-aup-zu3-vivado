@@ -1,0 +1,50 @@
+# This repository stores design inputs; re-create the Vivado project in build/.
+/build/
+/out/
+/vitis_ws/
+
+# Vivado working files (including projects created outside build/)
+*.xpr
+*.cache/
+*.gen/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.srcs/
+.Xil/
+.xil/
+*.jou
+*.log
+*.backup.jou
+*.backup.log
+*.pb
+*.str
+*.wdb
+*.wcfg
+*.vcd
+*.fst
+*.dcp
+*.rpt
+*.rpx
+*.ltx
+*.xsa
+*.bit
+*.mcs
+*.elf
+BOOT.BIN
+
+# Vitis workspaces and compiled artifacts
+.metadata/
+.vitis/
+vitis_ws/
+*.o
+*.a
+
+# Editor/OS leftovers
+.DS_Store
+*~
+*.swp
+*.swo
+
+# Intentionally KEEP: .sv/.v/.xdc/.tcl/.bif/.mem

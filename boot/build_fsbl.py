@@ -1,9 +1,11 @@
 import os
 import vitis
 
-root = os.path.dirname(os.path.abspath(__file__))
-xsa = os.path.join(root, "ouros.xsa")
-workspace = os.path.join(root, "vitis_ws")
+root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+xsa = os.path.join(root, "build", "boot", "ouros.xsa")
+workspace = os.path.join(root, "build", "vitis_ws")
+if not os.path.isfile(xsa):
+    raise FileNotFoundError(f"Missing {xsa}; run Vivado scripts/build_bitstream.tcl first")
 
 print(f"XSA       : {xsa}")
 print(f"Workspace : {workspace}")

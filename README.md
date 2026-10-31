@@ -51,10 +51,12 @@ Find the **FSBL ELF produced by your Vitis build** in `build/vitis_ws`.
 Then package it with the bitstream using the original `boot/ouros.bif`:
 
 ```sh
-python3 boot/package_boot.py --fsbl /path/to/zynqmp_fsbl.elf
+python3 boot/package_boot.py --fsbl build/vitis_ws/ouros_platform/export/ouros_platform/sw/boot/fsbl.elf
 ```
 
 This writes `build/boot/BOOT.BIN`. Place it on the board's booting SD card. 
+
+**After booting from SD card, press `btn0` on board to kick-start Ouros execution.**
 
 ## Repository contents
 
